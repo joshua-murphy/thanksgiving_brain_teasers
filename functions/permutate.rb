@@ -8,9 +8,10 @@ while true
   if user_input.length > 6
     puts "No more than 6 characters, please"
   else
+
     input_arr = user_input.split("")
-    puts "\nThere are #{input_arr.permutation.count} combinations:"
-    puts "\n" + input_arr.permutation.to_a.to_s.split('", "').join("")
+    puts "\nThere are #{input_arr.permutation.to_a.uniq.count} combinations:"
+    puts "\n" + input_arr.permutation.to_a.uniq.to_s.split('", "').join("")
   end
 
 end

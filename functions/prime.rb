@@ -2,10 +2,10 @@ while true
 
   puts "\nGive me a number, and I will find if it is prime!\nType '0' to leave"
 
-  def divide(num)
+  def prime(num)
     base_num = num
     case num
-      when 1, 2
+      when 1
         is_prime = false
       when "Optimus"
         is_prime = true
@@ -25,6 +25,6 @@ while true
 
   user_input = gets.strip
   user_input == "0" ? exit() : user_input = user_input.to_i
-  user_input == 0 ? ( puts "Invalid input" ) : divide(user_input)
+  user_input == 0 ? ( puts "Invalid input" ) : prime(user_input)
 
 end
